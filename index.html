@@ -1,2 +1,42 @@
-Hello world!
-my name is Amy...
+<!DOCTYPE html>
+<html>	
+		
+	<body align="left">  
+		<h1>统一建模语言理论考试</h1>
+		<p>考试科目：统一建模语言&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：100分钟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得分：100</p>
+		<p>班级：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="banji" size="10"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学号：<input type="text" name="xuehao" size="10"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：<input type="text" name="name" size="10"></input></p>
+	<form  action="/echo" method="POST">
+		<h2>一、填空题（每空5分，共20分）</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;1.UML的中文全称是：&nbsp;&nbsp;<input type="text" name="1" size="20"></input></p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;2.对象最突出的特征是：&nbsp;&nbsp;
+			<input type="text" name="2" size="10"> &nbsp;&nbsp;<input type="text" name="3" size="10"></input> &nbsp;&nbsp;<input type="text" name="4" size="10"></input></input>
+		</p>
+		<h2>二、选择题（每题10分，共20分）</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;1.UML与软件工程的关系是：</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "allname" type = "radio" value = "" checked = "checked"/> (A)UML就是软件工程</p>     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "allname" type = "radio" value = "" /> (B)UML参与到软件工程中软件开发过程的几个阶段 </p>     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "allname" type = "radio" value = "" /> (C)UML与软件工程无关 </p >     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "allname" type = "radio" value = "" />
+			(D)UML是软件工程的一部分 </p>       
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;2.Java语言支持：</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "java" type = "radio" value = "" checked = "checked"/> (A)单继承</p>     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "java" type = "radio" value = "" /> (B)多继承 </p>     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "java" type = "radio" value = "" /> (C)单继承和多继承都支持 </p >     
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;<input name = "java" type = "radio" value = "" />
+			(D)单继承和多继承都不支持 </p> 
+		<h2>四、判断题（每题10分，共20分）</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;1.用例图只是用于和客户交流与沟通的，用于确定需求。&nbsp;&nbsp;<input type="checkbox" name="yonglitu" value="1" />(A)√&nbsp;&nbsp;
+			<input type="checkbox" name="yonglitu" value="2" />(B)×</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;2.在状态图中，终止状态在一个状态图中允许有任意多个。&nbsp;&nbsp;<input type="checkbox" name="yongli" value="1" />(A)√&nbsp;&nbsp;
+			<input type="checkbox" name="yongli" value="2" />(B)×</p>
+			
+		<h2>五、简答题（每题20分，共20分）</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;1.简述什么是模型已经模型的表现形式？</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="10" cols="100"></textarea></p>
+		
+		<p align="left">
+			<button type="submit">计算分数</button>
+		</p>
+	</form>
+	</body>
+</html>
