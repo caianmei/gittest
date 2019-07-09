@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器示例</title>
+</head>
+<body>
+
+<input type="text" id="result">
+
+<input type="button" value="开始" id = "start">
+<input type="button" value="结束" id = "stop">
+
+<script type="text/javascript">
+    onload = function ()
+    {
+        var txt = document.getElementById("result");
+        txt.value = 0;
+        var startBtn = document.getElementById("start");
+        startBtn.onclick = function ()
+        {
+            txt.value = 0;
+            if (!this.interval)
+            {
+                this.interval = setInterval (function ()
+                {
+                    txt.value++;
+                }, 1000);
+                this.disabled = 'disabled';
+            }
+        };
+        var stopBtn = document.getElementById("stop");
+        stopBtn.onclick = function ()
+        {
+            if (!!startBtn.interval)
+            {
+                clearInterval (startBtn.interval);
+                startBtn.removeAttribute ('disabled');
+                startBtn.interval = null;
+            }
+        };    
+    };
+</script>
+</body>
+</html>
