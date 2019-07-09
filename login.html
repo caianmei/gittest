@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  id = "username" placeholder="请输入用户名"></input><br>
+    <input type="password"  id = "password" placeholder="请输入密码"></input><br>
+    <button onclick="submit()">登录</button>
+</body>
+    <script>
+        function submit() {
+            var password = document.getElementById("password")
+            if (password.value == "123") {
+                alert("欢迎来到奇妙世界~")
+            } else {
+                password.value = null;
+                alert("对不起，您的密码错误~")
+            }
+        } 
+    </script>
+
+</html>
